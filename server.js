@@ -10,7 +10,8 @@ MongoClient.connect(addr, function (err, db) {
     if (err) {
         console.log('Unable to connect to the mongoDB server. Error:', err);
     } else {
-        console.log('Connection established to', addr);
+       // console.log('Connection established to', addr);
+        console.log("good to go");
         var collection = db.collection('table1');
         collection.find().toArray(function (err, result) {
             if (err) {
@@ -26,7 +27,7 @@ MongoClient.connect(addr, function (err, db) {
 });
 http.createServer(function (req, res)
     {
-    port=Number(process.env.PORT||3333)
+    port=Number(process.env.PORT||8888)
         res.writeHead(200, {
             'Content-Type': 'application/json'
         });
