@@ -1,11 +1,24 @@
 {
-  "name": "nodecode",
-  "version": "1.0.0",
-  "description": "nodecode",
-  "main": "run.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "node-code",
+  "version": "0.2.5",
+  "description": "node-code",
+  "engines": {
+    "node": "5.9.1"
   },
-  "author": "",
-  "license": "ISC"
+  "main": "run.js",
+  "dependencies": {
+    "ejs": "2.4.1",
+     "mongodb": "*",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/offlinetestengine/myrepos.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
