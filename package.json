@@ -1,24 +1,20 @@
 {
-  "name": "node-code",
-  "version": "0.2.5",
-  "description": "node-code",
-  "engines": {
-    "node": "5.9.1"
-  },
-  "main": "run.js",
-  "dependencies": {
-    "ejs": "2.4.1",
-     "mongodb": "*",
-    "express": "4.13.3"
+  "name": "nodecode",
+  "version": "1.0.0",
+  "description": "nc",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/offlinetestengine/myrepos.git"
+    "url": "git+https://github.com/offlinetestengine/myrepos.git"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "license": "MIT"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/offlinetestengine/myrepos/issues"
+  },
+  "homepage": "https://github.com/offlinetestengine/myrepos#readme"
 }
