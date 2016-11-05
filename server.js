@@ -26,11 +26,11 @@ MongoClient.connect(addr, function (err, db) {
 });
 http.createServer(function (req, res)
     {
-  var  port=Number(process.env.PORT||2332)
+//  var  port=Number(process.env.PORT||2332)
         res.writeHead(200, {
             'Content-Type': 'application/json'
         });
         res.write(show);
         res.end(" ");
-    }).listen(port);
-console.log("2332");
+    }).listen(process.env.PORT || 5000);
+console.log("5000");
