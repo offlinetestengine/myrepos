@@ -1,10 +1,19 @@
 //lets require/import the mongodb native drivers.
 var mongodb = require('mongodb');
+var express = require('express');
 var http = require("http");
 var url = require("url");
 var show = {};
 var MongoClient = mongodb.MongoClient;
 var addr = 'mongodb://db1:root@ds011873.mlab.com:11873/offlinedb';
+
+var app = express();
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 MongoClient.connect(addr, function (err, db) {
     if (err) {
         console.log('Unable to connect to the mongoDB server. Error:', err);
