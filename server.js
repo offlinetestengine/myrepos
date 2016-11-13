@@ -9,11 +9,11 @@ var show = {};
 var MongoClient = mongodb.MongoClient;
 var addr = 'mongodb://db1:root@ds011873.mlab.com:11873/offlinedb';
 
-//app.use(function(req, res, next) {
-//  res.header("Access-Control-Allow-Origin", "*");
-//  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-//  next();
-//});
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 app.get('/', function (req, res) 
         {
